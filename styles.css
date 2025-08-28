@@ -1,0 +1,69 @@
+:root {
+    --fonte: "Press Start 2P";
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte);
+    background-color: #2d3436;
+    background-image: linear-gradient(360deg, #2d3436 0%, #000000 74%);
+}
+
+.retangulo {
+    border: 3px solid #ccd0d1;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: #2d3436 0px 20px 30px -10px;
+    background-color: #e6eaec;
+    text-align: center;
+}
+
+.retangulo::after{
+    border: 20px solid violet;
+}
+
+.tela{
+    margin: 10px 0;
+    border-radius: 6px;
+    box-shadow: inset #b8bd9a 0px 0px 20px 0px;
+    border: #b8bd9a solid 2px;
+    height: 60px;
+    background-color: #cdd3bd;
+
+}
+
+.caixa-de-numeros{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(4, 75px);
+    gap: 6px;
+
+    border-radius: 50px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+
+.botoes {
+    background-color: #d2d9dc;
+    border: #90979a solid 2px;
+    box-shadow: #aeb2b5 0px 0px 0px 2px;;
+    border-radius: 6px;
+    font-size: 24px;
+    font-family: var(--fonte);
+}
+
+.campo-teste{
+    background-color: transparent;
+    width: 309px;
+    font-family: var(--fonte);
+    border: none;
+    /* padding-left: 10px; */
+    font-size: 24px;
+    height: 55px;
+    text-align: right;
+}
